@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHOFY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/fav-icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="navie"><img class="logo" src="images/logo1.png" alt="" >
+                 <h2 class="heading">Dynamic E-Commerce Product Table</h2>
+            </div>
+            <br>
+            
+            <div class="controls">
+                <input type="text" id="search" placeholder="Search by product name...">
+                <div class="filter">
+                    <label for="price-range">Price Range:</label>
+                    <input type="range" id="price-range" min="0" max="100000" step="1000">
+                    <span id="price-value">₹0 - ₹1000</span>
+                </div>
+                <div class="filter">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="apparel">Apparel</option>
+                        <option value="home">Home</option>
+                    </select>
+                </div>
+                <div class="sorting">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="rating-desc">Rating: High to Low</option>
+                        <option value="rating-asc">Rating: Low to High</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <!-- Product Table -->
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product rows will be dynamically injected here -->
+            </tbody>
+        </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

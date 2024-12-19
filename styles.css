@@ -1,0 +1,100 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.controls input,
+.controls select {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.filter,
+.sorting {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#price-value {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+tr:hover{
+    background-color: #c5eaff;
+    transform: scale(1.01);
+
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #8dd9ff;
+    font-weight: bold;
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+.logo{
+    width: 140px;
+    margin-right: 180vh; /* Moves the image to the right */
+}
+.heading{
+    margin-top: 0px ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navie{
+    display:block;
+}
